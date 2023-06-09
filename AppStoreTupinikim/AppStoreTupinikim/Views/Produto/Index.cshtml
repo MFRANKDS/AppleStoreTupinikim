@@ -1,0 +1,64 @@
+﻿@{
+ ViewData["Title"] = "Lista de Produtos";
+}
+<div class="text-center">
+ <h1 class="display-4">Listagem de Contatos</h1>
+ <p>Sistema de Gestão de produtos</p>
+</div>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-start mx-5">
+    <a class="btn btn-primary p-1 my-4" asp-controller="Produto" asp-action="Criar">
+        Cadastrar Produto
+    </a>
+</div>
+<table class="table table-hover justify-content-center mx-5">
+    <tr>
+        <th>Cod</th>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+        <th></th>
+        <th>
+            Ação
+        </th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Produto A</td>
+        <td>R$10,00</td>
+        <td>5</td>
+        <td></td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a role="button" class="btn btn-light">Editar</a>
+                <a role="button" class="btn btn-danger">Apagar</a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Produto B</td>
+        <td>R$20,00</td>
+        <td>3</td>
+        <td></td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a role="button" class="btn btn-light">Editar</a>
+                <a role="button" class="btn btn-danger">Apagar</a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Produto C</td>
+        <td>R$5,00</td>
+        <td>10</td>
+        <td></td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a role="button" class="btn btn-light">Editar</a>
+                <a role="button" class="btn btn-danger">Apagar</a>
+            </div>
+        </td>
+    </tr>
+</table>
