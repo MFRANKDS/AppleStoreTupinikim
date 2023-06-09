@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AppStoreTupinikim",
+    "\\AppStoreTupinikim\\AppStoreTupinikim",
+    "\\AppStoreTupinikim\\AppStoreTupinikim\\Views",
+    "\\AppStoreTupinikim\\AppStoreTupinikim\\Views\\Home",
+    "\\AppStoreTupinikim\\AppStoreTupinikim\\Views\\Shared"
   ],
-  "SelectedNode": "\\C:\\Users\\Usuário\\Documents\\AppStoreTupinikim",
+  "SelectedNode": "\\AppStoreTupinikim\\AppStoreTupinikim.sln",
   "PreviewInSolutionExplorer": false
 }

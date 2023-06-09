@@ -1,27 +1,35 @@
-﻿<div class="text-center">
+﻿@model ProdutoModel
+<div class="text-center">
     <h1 class="display-4">Cadastrar Produtos</h1>
 </div>
 <hr />
 
-<div class="row d-flex flex-wrap justify-content-center p-2 m-3">
-    <div class="col col-sm-10 col-md-4">
+<form class="row d-flex flex-wrap justify-content-center p-2" action="@Url.Action("CadastrarProduto","Produto")" method="post">
+    <div class="col-3 col-sm-2 col-md-3 col-lg-1">
+        <!-- Cod -->
+        <div class="form-outline flex-wrap">
+          <input type="text" id="disabledTextInput" class="form-control" placeholder="1" name="Codigo">
+          <label for="disabledTextInput" class="form-label">Codigo</label>
+        </div>
+    </div>
+    <div class="col col-sm-12 col-md-4">
         <!-- Name -->
         <div class="form-outline flex-wrap">
-            <input type="text" id="form8Example3" class="form-control" />
+            <input type="text" id="form8Example3" class="form-control" name="NomeProdudo" />
             <label class="form-label" for="form8Example3">Nome Produto</label>
         </div>
     </div>
-    <div class="col-sm-10 col-md-4">
+    <div class="col-sm-12 col-md-3">
         <!-- Preço -->
         <div class="form-outline flex-wrap">
-            <input type="text" id="form8Example4" class="form-control" />
+            <input type="text" id="form8Example4" class="form-control" name="Preco" />
             <label class="form-label" for="form8Example4">Preço Produto</label>
         </div>
     </div>
-    <div class="col-sm-10 col-md-4">
+    <div class="col-sm-12 col-md-4">
         <!-- Qtd -->
         <div class="form-outline flex-wrap">
-            <input type="text" id="form8Example5" class="form-control" />
+            <input type="text" id="form8Example5" class="form-control" name="Quantidade" />
             <label class="form-label" for="form8Example5">Quantidade</label>
         </div>
     </div>
@@ -30,4 +38,5 @@
         <a asp-controller="Produto" asp-action="Index">
             <button type="submit" class="btn btn-primary">Voltar</button>
         </a>
-</div>
+    </div>
+</form>
